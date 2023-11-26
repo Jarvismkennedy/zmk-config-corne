@@ -190,7 +190,7 @@
 			#binding-cells = <2>;
 			bindings = <&mo>, <&kp>;
 		};
-	},
+	};
         keymap {
                 compatible = "zmk,keymap";
 
