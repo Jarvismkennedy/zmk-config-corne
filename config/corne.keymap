@@ -118,7 +118,6 @@
 		#define num 2
 		#define nav 3
 		#define func 4
-		#define bt 5
 		//
 		// Home row mod-tap keys for all except index fingers
 		//
@@ -209,10 +208,10 @@
 						// | none |  Z   |  X   |  C   |  D   |  V  |     |  K  |  H   |  ,  |  .  |  /  | none |
 						//                      |BT/ESC|NAV/SP|?/TAB|     |ENT  |SYM/BK| NUM |
                         bindings = <
-   &none   &kp Q       &kp W       &kp F       &kp P           &kp B       	  &kp J     &kp L           &kp U       &kp Y      &kp SEMI   &none
-   &none   &hl LGUI A  &hl LALT R  &hl LCTRL S &sleft LSHFT T  &kp G       	  &kp M     &sright RSHFT N &hr RCTRL E &hr RALT I &hr RGUI O &none
-   &none   &kp Z       &kp X       &kp C       &kp D           &kp V       	  &kp K     &kp H           &kp COMMA   &kp DOT    &kp FSLH   &none
-                                   &kp ESC     &t nav SPACE    &t func TAB 	  &t bt RET &t sym BSPC     &mo num
+   &none   &kp Q       &kp W       &kp F       &kp P           &kp B       	  &kp J       &kp L           &kp U       &kp Y      &kp SEMI   &none
+   &none   &hl LGUI A  &hl LALT R  &hl LCTRL S &sleft LSHFT T  &kp G       	  &kp M       &sright RSHFT N &hr RCTRL E &hr RALT I &hr RGUI O &none
+   &none   &kp Z       &kp X       &kp C       &kp D           &kp V       	  &kp K       &kp H           &kp COMMA   &kp DOT    &kp FSLH   &none
+                                   &kp ESC     &t nav SPACE    &t func TAB 	  &t func RET &t sym BSPC     &mo num
                         >;
                 };
                 sym_layer {
@@ -256,18 +255,10 @@
                 };
                 func_layer {
                         bindings = <
-   &none   &none  &none  &none   &none  &none 		 &none     &kp F7    &kp F8  &kp F9  &none  &none
-   &none   &none  &none  &none   &none  &none 		 &none     &kp F4    &kp F5  &kp F6  &none  &none
-   &none   &none  &none  &none   &none  &none 		 &none     &kp F1    &kp F2  &kp F3  &none  &none
-                  		 &trans  &trans &trans 		 &trans    &trans    &trans
-                        >;
-                };
-                bt_layer {
-                        bindings = <
-  &none  &none   &none         &none          &none          &none 		      &none   &none     &none     &none   &none  &none 
-  &none  &none   &none         &none          &none          &none            &none   &none     &none     &none   &none  &none 
-  &none  &none   &bt BT_SEL 0  &none          &none          &none            &none   &none     &none     &none   &none  &none 
-                  	           &trans         &trans         &trans 	      &trans  &trans    &trans
+   &none   &none  &none         &none   &none  &none 		 &none     &kp F7    &kp F8  &kp F9  &none  &none
+   &none   &none  &none         &none   &none  &none 		 &none     &kp F4    &kp F5  &kp F6  &none  &none
+   &none   &none  &bt BT_SEL 0  &none   &none  &none 		 &none     &kp F1    &kp F2  &kp F3  &none  &none
+                  		        &trans  &trans &trans 		 &trans    &trans    &trans
                         >;
                 };
         };
