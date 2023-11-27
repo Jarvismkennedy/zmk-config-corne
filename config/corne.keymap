@@ -209,10 +209,10 @@
 						// | none |  Z   |  X   |  C   |  D   |  V  |     |  K  |  H   |  ,  |  .  |  /  | none |
 						//                      |BT/ESC|NAV/SP|?/TAB|     |ENT  |SYM/BK| NUM |
                         bindings = <
-   &none   &kp Q       &kp W       &kp F       &kp P                &kp B       	  &kp J     &kp L                &kp U       &kp Y      &kp SEMI         &none
-   &none   &hl LGUI A  &hl LALT R  &hl LCTRL S &sleft LSHFT T  &kp G       	  &kp M     &sright RSHFT N &hr RCTRL E &hr RALT I &hr RGUI O       &none
-   &none   &kp Z       &kp X       &kp C       &kp D                &kp V       	  &kp K     &kp H                &kp COMMA   &kp DOT    &kp FsleftH &none
-                                   &kp ESC     &t nav SPACE         &t func TAB 	  &t bt RET &t sym BSPC          &mo num
+   &none   &kp Q       &kp W       &kp F       &kp P           &kp B       	  &kp J     &kp L           &kp U       &kp Y      &kp SEMI   &none
+   &none   &hl LGUI A  &hl LALT R  &hl LCTRL S &sleft LSHFT T  &kp G       	  &kp M     &sright RSHFT N &hr RCTRL E &hr RALT I &hr RGUI O &none
+   &none   &kp Z       &kp X       &kp C       &kp D           &kp V       	  &kp K     &kp H           &kp COMMA   &kp DOT    &kp FSLH   &none
+                                   &kp ESC     &t nav SPACE    &t func TAB 	  &t bt RET &t sym BSPC     &mo num
                         >;
                 };
                 sym_layer {
