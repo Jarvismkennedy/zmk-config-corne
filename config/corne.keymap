@@ -149,7 +149,7 @@
 		//
 		// Special home row mod-tap keys for the index fingers
 		//
-		shift_left: miryoku_home_row_mods_left_shift_shift {
+		sleft: miryoku_home_row_mods_left_shift_shift {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOME_ROW_MODS_LEFT_SHIFT_SHIFT";
 			flavor = SHIFT_HOLDING_TYPE;
@@ -161,7 +161,7 @@
 			#binding-cells = <2>;
 			bindings = <&kp>, <&kp>;
 		};
-		shift_right: miryoku_home_row_mods_right_shift_shift {
+		sright: miryoku_home_row_mods_right_shift_shift {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
 			flavor = SHIFT_HOLDING_TYPE;
@@ -183,7 +183,7 @@
 			tapping-term-ms = <THUMB_HOLDING_TIME>;
 			quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
 			//global-quick-tap; // no typing streak
-			//retro-tap; // don't allow shift_leftow (hold-like) taps
+			//retro-tap; // don't allow sleftow (hold-like) taps
 			#binding-cells = <2>;
 			bindings = <&mo>, <&kp>;
 		};
@@ -194,7 +194,7 @@
 			tapping-term-ms = <SPACE_HOLDING_TIME>;
 			quick-tap-ms = <SPACE_REPEAT_DECAY>; // enable repeat
 			//global-quick-tap; // no typing streak
-			retro-tap; // allow shift_leftow (hold-like) taps
+			retro-tap; // allow sleftow (hold-like) taps
 			#binding-cells = <2>;
 			bindings = <&mo>, <&kp>;
 		};
@@ -210,8 +210,8 @@
 						//                      |BT/ESC|NAV/SP|?/TAB|     |ENT  |SYM/BK| NUM |
                         bindings = <
    &none   &kp Q       &kp W       &kp F       &kp P                &kp B       	  &kp J     &kp L                &kp U       &kp Y      &kp SEMI         &none
-   &none   &hl LGUI A  &hl LALT R  &hl LCTRL S &shift_left LSHFT T  &kp G       	  &kp M     &shift_right RSHFT N &hr RCTRL E &hr RALT I &hr RGUI O       &none
-   &none   &kp Z       &kp X       &kp C       &kp D                &kp V       	  &kp K     &kp H                &kp COMMA   &kp DOT    &kp Fshift_leftH &none
+   &none   &hl LGUI A  &hl LALT R  &hl LCTRL S &sleft LSHFT T  &kp G       	  &kp M     &sright RSHFT N &hr RCTRL E &hr RALT I &hr RGUI O       &none
+   &none   &kp Z       &kp X       &kp C       &kp D                &kp V       	  &kp K     &kp H                &kp COMMA   &kp DOT    &kp FsleftH &none
                                    &kp ESC     &t nav SPACE         &t func TAB 	  &t bt RET &t sym BSPC          &mo num
                         >;
                 };
@@ -223,7 +223,7 @@
 						//                    |trans|backsp|trans|    |trans|trans| trans |
                         bindings = <
    &none   &kp GRAVE   &kp AMPS  &kp STAR   &kp LPAR   &kp LPAR         &kp RPAR  &kp LT    &kp EQUAL  &kp GT  &kp SQT  &none
-   &none   &kp TILDE   &kp DLLR  &kp PRCNT  &kp CARET  &kp LBKT         &kp RBKT  &kp UNDER &kp MINUS  &none   &kp Bshift_leftH &none
+   &none   &kp TILDE   &kp DLLR  &kp PRCNT  &kp CARET  &kp LBKT         &kp RBKT  &kp UNDER &kp MINUS  &none   &kp BsleftH &none
    &none   &none       &kp EXCL  &kp AT     &kp HASH   &kp LBRC         &kp RBRC  &kp PLUS  &kp COMMA  &kp DOT &kp PIPE &none
                                  &trans     &kp BSPC   &trans           &trans    &trans    &trans
                         >;
