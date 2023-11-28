@@ -139,7 +139,7 @@
 		//
 		// Special home row mod-tap keys for the index fingers
 		//
-		sleft: miryoku_home_row_mods_left_shift_shift {
+		shift_left: miryoku_home_row_mods_left_shift_shift {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOME_ROW_MODS_LEFT_SHIFT_SHIFT";
 			flavor = SHIFT_HOLDING_TYPE;
@@ -151,7 +151,7 @@
 			#binding-cells = <2>;
 			bindings = <&kp>, <&kp>;
 		};
-		sright: miryoku_home_row_mods_right_shift_shift {
+		shift_right: miryoku_home_row_mods_right_shift_shift {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
 			flavor = SHIFT_HOLDING_TYPE;

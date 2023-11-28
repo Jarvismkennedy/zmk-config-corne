@@ -21,19 +21,19 @@
 						//                      |BT/ESC|NAV/SP|?/TAB|     |ENT  |SYM/BK| NUM |
                         bindings = <
    &none   &kp Q       &kp W       &kp F       &kp P           &kp B       	  &kp J       &kp L           &kp U       &kp Y      &kp SEMI   &none
-   &none   &hl LGUI A  &hl LALT R  &hl LCTRL S &sleft LSHFT T  &kp G       	  &kp M       &sright RSHFT N &hr RCTRL E &hr RALT I &hr RGUI O &none
+   &none   &hl LGUI A  &hl LALT R  &hl LCTRL S &shift_left LSHFT T  &kp G       	  &kp M       &shift_right RSHFT N &hr RCTRL E &hr RALT I &hr RGUI O &none
    &none   &kp Z       &kp X       &kp C       &kp D           &kp V       	  &kp K       &kp H           &kp COMMA   &kp DOT    &kp FSLH   &none
                                    &kp ESC     &t nav SPACE    &t func TAB 	  &t func RET &t sym BSPC     &mo num
                         >;
                 };
                 sym_layer {
 						// -----------------------------------------------------------------------------------------
-						// | none |  `  |  &  |  *  |none |  (  |     |  )  |  <  |  =  |  >  |  '  | none |
+						// | none |  `  |  &  |  *  |  (  |  )  |     |none |  <  |  =  |  >  |  '  | none |
 						// | none |  ~  |  $  |  %  |  ^  |  [  |     |  ]  |  _  |  -  |  \  |  "  | none |
 						// | none |none |  !  |  @  |  #  |  {  |     |  }  |  +  | none|  |  | none| none |
 						//                    |trans|backsp|trans|    |trans|trans| trans |
                         bindings = <
-   &none   &kp GRAVE   &kp AMPS  &kp STAR   &none      &kp LPAR         &kp RPAR  &kp LT    &kp EQUAL  &kp GT   &kp SQT  &none
+   &none   &kp GRAVE   &kp AMPS  &kp STAR   &kp LPAR   &kp RPAR         &none     &kp LT    &kp EQUAL  &kp GT   &kp SQT  &none
    &none   &kp TILDE   &kp DLLR  &kp PRCNT  &kp CARET  &kp LBKT         &kp RBKT  &kp UNDER &kp MINUS  &kp BSLH &kp DQT  &none
    &none   &none       &kp EXCL  &kp AT     &kp HASH   &kp LBRC         &kp RBRC  &kp PLUS  &none      &kp PIPE &none    &none
                                  &trans     &kp BSPC   &trans           &trans    &trans    &trans
