@@ -18,7 +18,7 @@
 						// | none |  Q   |  W   |  F   |  P   |  B  |     |  J  |  L   |  U  |  Y  |  ;  | none |
 						// | none |  G/A |  A/R |  C/S |  S/T |  G  |     |  M  |  S/N | C/E | A/I | G/O | none |
 						// | none |  Z   |  X   |  C   |  D   |  V  |     |  K  |  H   |  ,  |  .  |  /  | none |
-						//                      |BT/ESC|NAV/SP|?/TAB|     |ENT  |SYM/BK| NUM |
+						//                      |BT/ESC|NAV/SP|?/TAB|     |shft/ent  |SYM/BK| NUM |
                         bindings = <
    &none   &kp Q       &kp W       &kp F       &kp P                &kp B            	  &kp J        &kp L                &kp U       &kp Y      &kp SEMI   &none
    &none   &hl LGUI A  &hl LALT R  &hl LCTRL S &shift_left LSHFT T  &kp G            	  &kp M        &shift_right RSHFT N &hr RCTRL E &hr RALT I &hr RGUI O &none
