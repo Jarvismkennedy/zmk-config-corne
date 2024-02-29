@@ -23,7 +23,7 @@
    &none   &kp Q       &kp W       &kp F       &kp P                &kp B            	  &kp J        &kp L                &kp U       &kp Y      &kp SEMI   &none
    &none   &hl LGUI A  &hl LALT R  &hl LCTRL S &shift_left LSHFT T  &kp G            	  &kp M        &shift_right RSHFT N &hr RCTRL E &hr RALT I &hr RGUI O &none
    &none   &kp Z       &kp X       &kp C       &kp D                &kp V            	  &kp K        &kp H                &kp COMMA   &kp DOT    &kp FSLH   &none
-                                   &kp ESC     &t nav SPACE         &t func TAB      	  &t func RET  &mo sym              &t num BSPC
+                                   &kp ESC     &t nav SPACE         &t func TAB      	  &shift_right RSHFT RET  &mo sym   &t num BSPC
                         >;
                 };
                 sym_layer {
